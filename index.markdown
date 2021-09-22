@@ -6,9 +6,8 @@
 layout: default
 test_variable: 19
 ---
-## Ce site est actuellement en construction
+## Ce site est actuellement en construction, revenez plus tard !
 
-Ceci est un test sur la page d'index.
 ```python
 code_test = "coucou"
 ```
