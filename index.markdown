@@ -8,11 +8,7 @@ test_variable: 19
 ---
 ## Ce site est actuellement en construction, revenez plus tard !
 
-```python
-code_test = "coucou"
-```
-
-## Latest Posts
+<!-- ## Latest Posts
 
 <ul>
   {% for post in site.posts %}
@@ -21,4 +17,4 @@ code_test = "coucou"
       {{ post.excerpt }}
     </li>
   {% endfor %}
-</ul>
+</ul> -->
