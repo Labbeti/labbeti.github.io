@@ -16,7 +16,7 @@ author_profile: true
 author:
   name     : "Etienne Labbé"
 #   avatar   : "/assets/images/bio-photo.jpg"
-  bio      : "Doctorant en Intelligence Artificielle dans l'équipe [SAMoVA](https://www.irit.fr/SAMOVA/site/) à [IRIT](https://www.irit.fr/en/laboratory/laboratory-presentation/)"
+  bio      : "__Doctorant__ en Intelligence Artificielle dans l'équipe [SAMoVA](https://www.irit.fr/SAMOVA/site/) à l'[IRIT](https://www.irit.fr/en/laboratory/laboratory-presentation/)"
   location : "Toulouse, France"
   links:
     - label: "GitHub"
@@ -44,17 +44,6 @@ sidebar:
 ---
 
 <!-- TODO : photo -->
-
-<!-- ## Identité
-
-| Activité | Doctorant en Informatique |
-| Lieu |  |
-| Email | {{ site.email }} |
-| Age | 24 ans |
-|  | Français |
-|  |  |
-| Genre | Masculin | -->
-
 
 ## Sujets de recherche
 - Apprentissage profond pour la description textuelle automatique de l’audio
@@ -106,6 +95,6 @@ sidebar:
 ## Centres d'intérêts -->
 
 
-## Liens
+<!-- ## Liens
 - [Github](https://github.com/Labbeti)
-- [LinkedIn](https://www.linkedin.com/in/etienne-labb%C3%A9-a8439a199/)
+- [LinkedIn](https://www.linkedin.com/in/etienne-labb%C3%A9-a8439a199/) -->
