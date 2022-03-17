@@ -32,7 +32,8 @@ github_username: Labbeti
 
 # Build settings
 # theme: jekyll-theme-slate
-theme: minimal-mistakes-jekyll
+# theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" 
 plugins:
   - jekyll-feed
 
@@ -55,11 +56,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-
-# defaults:
-#   - scope:
-#       path: ""
-#       type: post
-#     values:
-#       author_profile: true
