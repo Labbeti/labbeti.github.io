@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Organiser son depot github comme un package python"
-date:   2021-09-17 17:12:37 +0200
+title: "Organiser son depot github comme un package python"
+date: 2021-09-17 17:12:37 +0200
 categories: python git github
 ---
 
