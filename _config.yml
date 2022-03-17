@@ -18,24 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-samova_en_link: "https://www.irit.fr/SAMOVA/site/"
-irit_fr_link: "https://www.irit.fr/le-laboratoire/presentation-du-laboratoire/"
-irit_en_link: "https://www.irit.fr/en/laboratory/laboratory-presentation/"
-
-title: Etienne Labbé
-email: etienne_dot_labbe31_at_gmail_dot_com
+title: "Page personnelle - Etienne Labbé"
+email: "etienne_dot_labbe31_at_gmail_dot_com"
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
-description: ""
+description: "Personal web page"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://labbeti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: Labbeti
 
 # Build settings
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
@@ -58,3 +55,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: post
+#     values:
+#       author_profile: true
