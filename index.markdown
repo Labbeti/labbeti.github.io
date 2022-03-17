@@ -9,7 +9,16 @@ lang: "fr"
 
 <!-- TODO : photo -->
 
-Equipe [SAMoVA]({{ site.samova_en_link }}) - [IRIT]({{ site.irit_en_link }})
+## Identité
+
+| Activité | Doctorant en Informatique |
+| Lieu | Equipe [SAMoVA]({{ site.samova_en_link }}) - [IRIT]({{ site.irit_en_link }}) |
+| Email | {{ site.email }} |
+| Age | 24 ans |
+| Nationnalité | Français |
+| Langues | Français (natif), Anglais (TOEIC) |
+| Genre | Masculin |
+
 
 ## Sujets de recherche
 - Apprentissage profond pour la description textuelle automatique de l’audio
@@ -46,7 +55,8 @@ Equipe [SAMoVA]({{ site.samova_en_link }}) - [IRIT]({{ site.irit_en_link }})
     - Université Paul Sabatier Toulouse III
 
 - Licence, Informatique 2015 - 2018
-    - Niveau : Mention Bien (5/150 en L3)
+    - Niveau : Mention Bien 
+    <!-- (5/150 en L3) pas sur du rang, a vérifier -->
     - Université Paul Sabatier Toulouse III
 
 - Baccalauréat scientifique sept. 2012 - juin 2015
