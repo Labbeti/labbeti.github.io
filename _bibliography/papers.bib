@@ -1,84 +1,53 @@
 ---
 ---
-
 @string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{Cances2022,
+	title        = {Comparison of semi-supervised deep learning algorithms for audio classification},
+	author       = {Cances, L{\'e}o and Labb{\'e}, Etienne and Pellegrini, Thomas},
+	year         = 2022,
+	month        = {Sep},
+	day          = 19,
+	journal      = {EURASIP Journal on Audio, Speech, and Music Processing},
+	volume       = 2022,
+	number       = 1,
+	pages        = 23,
+	doi          = {10.1186/s13636-022-00255-6},
+	issn         = {1687-4722},
+	url          = {https://doi.org/10.1186/s13636-022-00255-6},
+	abstract     = {In this article, we adapted five recent SSL methods to the task of audio classification. The first two methods, namely Deep Co-Training (DCT) and Mean Teacher (MT), involve two collaborative neural networks. The three other algorithms, called MixMatch (MM), ReMixMatch (RMM), and FixMatch (FM), are single-model methods that rely primarily on data augmentation strategies. Using the Wide-ResNet-28-2 architecture in all our experiments, 10{\%} of labeled data and the remaining 90{\%} as unlabeled data for training, we first compare the error rates of the five methods on three standard benchmark audio datasets: Environmental Sound Classification (ESC-10), UrbanSound8K (UBS8K), and Google Speech Commands (GSC). In all but one cases, MM, RMM, and FM outperformed MT and DCT significantly, MM and RMM being the best methods in most experiments. On UBS8K and GSC, MM achieved 18.02{\%} and 3.25{\%} error rate (ER), respectively, outperforming models trained with 100{\%} of the available labeled data, which reached 23.29{\%} and 4.94{\%}, respectively. RMM achieved the best results on ESC-10 (12.00{\%} ER), followed by FM which reached 13.33{\%}. Second, we explored adding the mixup augmentation, used in MM and RMM, to DCT, MT, and FM. In almost all cases, mixup brought consistent gains. For instance, on GSC, FM reached 4.44{\%} and 3.31{\%} ER without and with mixup. Our PyTorch code will be made available upon paper acceptance at https://github.com/Labbeti/SSLH.},
+	pdf          = {https://asmp-eurasipjournals.springeropen.com/counter/pdf/10.1186/s13636-022-00255-6.pdf}
 }
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@inproceedings{Labbe2022,
+	title        = {Is my Automatic Audio Captioning System so Bad? SPIDEr-max: A Metric to Consider Several Caption Candidates},
+	author       = {Labb\'{e}, Etienne and Pellegrini, Thomas and Pinquier, Julien},
+	year         = 2022,
+	month        = {November},
+	booktitle    = {Proceedings of the 7th Detection and Classification of Acoustic Scenes and Events 2022 Workshop (DCASE2022)},
+	address      = {Nancy, France},
+	abstract     = {Automatic Audio Captioning (AAC) is the task that aims to describe an audio signal using natural language. AAC systems take as input an audio signal and output a free-form text sentence, called a caption. Evaluating such systems is not trivial, since there are many ways to express the same idea. For this reason, several complementary metrics, such as BLEU, CIDEr, SPICE and SPIDEr, are used to compare a single automatic caption to one or several captions of reference, produced by a human annotator. Nevertheless, an automatic system can produce several caption candidates, either using some randomness in the sentence generation process, or by considering the various competing hypothesized captions during decoding with beam-search, for instance. If we consider an end-user of an AAC system, presenting several captions instead of a single one seems relevant to provide some diversity, similarly to information retrieval systems. In this work, we explore the possibility to consider several predicted captions in the evaluation process instead of one. For this purpose, we propose SPIDEr-max, a metric that takes the maximum SPIDEr value among the scores of several caption candidates. To advocate for our metric, we report experiments on Clotho v2.1 and AudioCaps, with a transformed-based system. On AudioCaps for example, this system reached a SPIDEr-max value (with 5 candidates) close to the SPIDEr human score of reference.},
+	pdf          = {https://dcase.community/documents/workshop2022/proceedings/DCASE2022Workshop_Labbe_46.pdf}
 }
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@misc{labbé2023multitask,
+	title        = {Multitask learning in Audio Captioning: a sentence embedding regression loss acts as a regularizer},
+	author       = {Etienne Labbé and Julien Pinquier and Thomas Pellegrini},
+	year         = 2023,
+	url          = {https://arxiv.org/abs/2305.01482},
+	eprint       = {2305.01482},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.SD},
+	pdf          = {https://arxiv.org/pdf/2305.01482.pdf},
+	abstract     = {In this work, we propose to study the performance of a model trained with a sentence embedding regression loss component for the Automated Audio Captioning task. This task aims to build systems that can describe audio content with a single sentence written in natural language. Most systems are trained with the standard Cross-Entropy loss, which does not take into account the semantic closeness of the sentence. We found that adding a sentence embedding loss term reduces overfitting, but also increased SPIDEr from 0.397 to 0.418 in our first setting on the AudioCaps corpus. When we increased the weight decay value, we found our model to be much closer to the current state-of-the-art methods, with a SPIDEr score up to 0.444 compared to a 0.475 score. Moreover, this model uses eight times less trainable parameters. In this training setting, the sentence embedding loss has no more impact on the model performance.},
+	selected     = {true}
 }
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@misc{pellegrini2023adapting,
+	title        = {Adapting a ConvNeXt model to audio classification on AudioSet},
+	author       = {Thomas Pellegrini and Ismail Khalfaoui-Hassani and Etienne Labbé and Timothée Masquelier},
+	year         = 2023,
+	url          = {https://arxiv.org/abs/2306.00830},
+	eprint       = {2306.00830},
+	archiveprefix = {arXiv},
+	primaryclass = {cs.SD},
+	pdf          = {https://arxiv.org/pdf/2306.00830.pdf},
+	abstract     = {In computer vision, convolutional neural networks (CNN) such as ConvNeXt, have been able to surpass state-of-the-art transformers, partly thanks to depthwise separable convolutions (DSC). DSC, as an approximation of the regular convolution, has made CNNs more efficient in time and memory complexity without deteriorating their accuracy, and sometimes even improving it. In this paper, we first implement DSC into the Pretrained Audio Neural Networks (PANN) family for audio classification on AudioSet, to show its benefits in terms of accuracy/model size trade-off. Second, we adapt the now famous ConvNeXt model to the same task. It rapidly overfits, so we report on techniques that improve the learning process. Our best ConvNeXt model reached 0.471 mean-average precision on AudioSet, which is better than or equivalent to recent large audio transformers, while using three times less parameters. We also achieved positive results in audio captioning and audio retrieval with this model. Our PyTorch source code and checkpoint models are available at this https URL.},
+	selected     = {true}
 }
