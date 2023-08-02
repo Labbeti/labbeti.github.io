@@ -2,12 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.irit.fr/en/home/'>Institut de Recherche en Informatique de Toulouse</a>, <a href='https://www.univ-tlse3.fr/home'>Université Toulouse III - Paul Sabatier</a>
+subtitle: /etjɛn labe/
 
-# profile:
-#   align: right
-#   image: prof_pic.jpg
-#   image_circular: true # crops the image to make it circular
+profile:
+  align: right
+  image: labbeti.jpg
+  image_circular: true # crops the image to make it circular
 #   address: >
 #     <p>Cr Rose Dieng-Kuntz</p>
 #     <p>31400 Toulouse, France</p>
@@ -18,7 +18,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD student currently working on Artificial Intelligence for computational analysis of sound events and scene analysis. My research focuses on Automated Audio Captioning, a multimodal task where a system must describe an audio file using natural language. I currently work at the Computer Science Research Institute of Toulouse, in France.
+I'm a PhD student currently working on Artificial Intelligence for computational analysis of audio events using deep learning methods. My research focuses on **Automated Audio Captioning**, a multimodal task aiming to build systems capable of describing an audio file using a sentence written in natural language. I am currently working at the <a href='https://www.irit.fr/en/home/'>Computer Science Research Institute of Toulouse</a>, in France.
+
+During my PhD, I have worked a lot with recent deep learning approaches, treated crossmodal data and worked on several supercomputers like Jean Zay. In a few months, I'm going to finish my PhD, but I'd like to continue participating in the development of AI to help improve society.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
