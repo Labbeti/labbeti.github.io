@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We submitted a paper to the DCASE2023 Workshop!
+We submitted a paper to the **DCASE2023** Workshop!
