@@ -1,5 +1,7 @@
 % SSL methods (EURASIP version)
 @article{Cances2022,
+    label = {2},
+    key = {2},
 	title        = {Comparison of semi-supervised deep learning algorithms for audio classification},
 	author       = {Cances, L{\'e}o and Labb{\'e}, Etienne and Pellegrini, Thomas},
 	year         = 2022,
@@ -16,6 +18,8 @@
 }
 % DCASE2022 Workshop - paper 1/2 - SPIDEr-max
 @inproceedings{Labbe2022,
+    label = {1},
+    key = {1},
 	title        = {Is my Automatic Audio Captioning System so Bad? SPIDEr-max: A Metric to Consider Several Caption Candidates},
 	author       = {Labb\'{e}, Etienne and Pellegrini, Thomas and Pinquier, Julien},
 	year         = 2022,
@@ -25,47 +29,27 @@
 	url          = {https://dcase.community/documents/workshop2022/proceedings/DCASE2022Workshop_Labbe_46.pdf},
 	abstract     = {Automatic Audio Captioning (AAC) is the task that aims to describe an audio signal using natural language. AAC systems take as input an audio signal and output a free-form text sentence, called a caption. Evaluating such systems is not trivial, since there are many ways to express the same idea. For this reason, several complementary metrics, such as BLEU, CIDEr, SPICE and SPIDEr, are used to compare a single automatic caption to one or several captions of reference, produced by a human annotator. Nevertheless, an automatic system can produce several caption candidates, either using some randomness in the sentence generation process, or by considering the various competing hypothesized captions during decoding with beam-search, for instance. If we consider an end-user of an AAC system, presenting several captions instead of a single one seems relevant to provide some diversity, similarly to information retrieval systems. In this work, we explore the possibility to consider several predicted captions in the evaluation process instead of one. For this purpose, we propose SPIDEr-max, a metric that takes the maximum SPIDEr value among the scores of several caption candidates. To advocate for our metric, we report experiments on Clotho v2.1 and AudioCaps, with a transformed-based system. On AudioCaps for example, this system reached a SPIDEr-max value (with 5 candidates) close to the SPIDEr human score of reference.}
 }
-% SER Loss (arxiv version)
-@misc{labbe2023multitask,
-	title        = {Multitask learning in Audio Captioning: a sentence embedding regression loss acts as a regularizer},
-	author       = {Etienne Labbé and Julien Pinquier and Thomas Pellegrini},
+% SER Loss (EUSIPCO version)
+@inproceedings{labbe2023multitask,
+	title        = {Multitask Learning in Audio Captioning: A Sentence Embedding Regression Loss Acts as a Regularizer},
+	author       = {Labbé, Etienne and Pinquier, Julien and Pellegrini, Thomas},
 	year         = 2023,
-	url          = {https://arxiv.org/pdf/2305.01482.pdf},
-	eprint       = {2305.01482},
-	archiveprefix = {arXiv},
-	primaryclass = {cs.SD}
+	booktitle    = {2023 31st European Signal Processing Conference (EUSIPCO)},
+	volume       = {},
+	number       = {},
+	pages        = {760--764},
+	doi          = {10.23919/EUSIPCO58844.2023.10290108},
+	url          = {https://ieeexplore.ieee.org/document/10290108}
 }
-% Interspeech CNext (arxiv version)
-misc{pellegrini2023adapting,
-	title        = {Adapting a ConvNeXt model to audio classification on AudioSet},
-	author       = {Thomas Pellegrini and Ismail Khalfaoui-Hassani and Etienne Labbé and Timothée Masquelier},
-	year         = 2023,
-	eprint       = {2306.00830},
-	archiveprefix = {arXiv},
-	primaryclass = {cs.SD}
-}
-% Interspeech CNext (HAL version)
+% Interspeech CNext (IS version)
 @inproceedings{pellegrini2023adapting,
-	title        = {{Adapting a ConvNeXt model to audio classification on AudioSet}},
-	author       = {Pellegrini, Thomas and Khalfaoui-Hassani, Ismail and Labb{\'e}, Etienne and Masquelier, Timoth{\'e}e},
+	title        = {{Adapting a ConvNeXt Model to Audio Classification on AudioSet}},
+	author       = {Thomas Pellegrini and Ismail Khalfaoui-Hassani and Etienne Labb\'e and Timoth\'ee Masquelier},
 	year         = 2023,
-	month        = Aug,
-	booktitle    = {{24th INTERSPEECH Conference (INTERSPEECH 2023)}},
-	address      = {Dublin, Ireland},
-	pages        = {{\`a} para{\^i}tre},
-	url          = {https://ut3-toulouseinp.hal.science/hal-04114822},
-	keywords     = {audio classification ; automatic audio captioning ; convolutional neural networks ; AudioSet ; ConvNeXt ; language based audio retrieval},
-	hal_id       = {hal-04114822},
-	hal_version  = {v1}
-}
-% DCASE my retrieval (arxiv version)
-misc{labbé2023killing,
-	title        = {Killing two birds with one stone: Can an audio captioning system also be used for audio-text retrieval?},
-	author       = {Etienne Labbé and Thomas Pellegrini and Julien Pinquier},
-	year         = 2023,
-	eprint       = {2308.15090},
-	archiveprefix = {arXiv},
-	primaryclass = {cs.CL}
+	booktitle    = {Proc. INTERSPEECH 2023},
+	pages        = {4169--4173},
+	doi          = {10.21437/Interspeech.2023-1564},
+	url          = {https://www.isca-speech.org/archive/pdfs/interspeech_2023/pellegrini23_interspeech.pdf}
 }
 % DCASE my retrieval (DCASE version)
 @inproceedings{Labba2023,
@@ -80,9 +64,9 @@ misc{labbé2023killing,
 	abstract     = {Automated Audio Captioning (AAC) aims to develop systems capable of describing an audio recording using a textual sentence. In contrast, Audio-Text Retrieval (ATR) systems seek to find the best matching audio recording(s) for a given textual query (Text-to-Audio) or vice versa (Audio-to-Text). These tasks require different types of systems: AAC employs a sequence-to-sequence model, while ATR utilizes a ranking model that compares audio and text representations within a shared projection subspace. However, this work investigates the relationship between AAC and ATR by exploring the ATR capabilities of an unmodified AAC system, without fine-tuning for the new task. Our AAC system consists of an audio encoder (ConvNeXt-Tiny) trained on AudioSet for audio tagging, and a transformer decoder responsible for generating sentences. For AAC, it achieves a high SPIDEr-FL score of 0.298 on Clotho and 0.472 on AudioCaps on average. For ATR, we propose using the standard Cross-Entropy loss values obtained for any audio/caption pair. Experimental results on the Clotho and AudioCaps datasets demonstrate decent recall values using this simple approach. For instance, we obtained a Text-to-Audio R@1 value of 0.382 for AudioCaps, which is above the current state-of-the-art method without external data. Interestingly, we observe that normalizing the loss values was necessary for Audio-to-Text retrieval.}
 }
 % Conette (arxiv version)
-@article{labbé2023conette,
-	title        = {CoNeTTE: An efficient Audio Captioning system leveraging multiple datasets with Task Embedding},
-	author       = {Étienne Labbé and Thomas Pellegrini and Julien Pinquier},
+@misc{labbe2023conette,
+	title        = {{CoNeTTE: An efficient Audio Captioning system leveraging multiple datasets with Task Embedding}},
+	author       = {Etienne Labbé and Thomas Pellegrini and Julien Pinquier},
 	year         = 2023,
 	journal      = {arXiv preprint arXiv:2309.00454},
 	url          = {https://arxiv.org/pdf/2309.00454.pdf},
@@ -97,4 +81,34 @@ misc{labbé2023killing,
 	year         = 2023,
 	journal      = {arXiv preprint arXiv:2309.07615},
 	url          = {https://arxiv.org/pdf/2309.07615.pdf}
+}
+%  DCASE2021 Task6 - Rank 8/11 - Tech report Etienne+Thomas
+@techreport{labbe2021_t6,
+	title        = {{IRIT-UPS} {DCASE} 2021 Audio Captioning System},
+	author       = {Labb\'{e}, Etienne and Pellegrini, Thomas},
+	year         = 2021,
+	month        = {July},
+	url          = {https://dcase.community/documents/challenge2021/technical_reports/DCASE2021_Labbe_102_t6.pdf},
+	institution  = {DCASE2021 Challenge},
+	abstract     = {This document provides a description of our seq-to-seq models used for audio captioning in the task 6 of the DCASE 2021 challenge. Four submissions were made with two different models, a “Listen- Attend-Tell” and a “CNN-Tell”, and two different algorithms for inference, greedy and beam search.}
+}
+% DCASE2021 Task6 - Rank 9/10 - my submission
+@techreport{labbe2022_t6a,
+	title        = {IRIT-UPS DCASE 2022 task6a system: stochastic decoding methods for audio captioning},
+	author       = {Labbé, Etienne and Pellegrini, Thomas and Pinquier, Julien},
+	year         = 2022,
+	month        = {July},
+	url          = {https://dcase.community/documents/challenge2022/technical_reports/DCASE2022_Labbe_87_t6a.pdf},
+	institution  = {DCASE2022 Challenge},
+	abstract     = {This document presents a summary of our models used in the Automated Audio Captioning task (6a) for the DCASE2022 challenge. Four submissions were made using different decoding methods : beam search, top k sampling, nucleus sampling and typical decoding.}
+}
+% DCASE2023 Task6a - Rank 3/11 - my submission
+@techreport{labbe2023_t6a,
+	title        = {IRIT-UPS DCASE 2023 audio captioning and retrieval system},
+	author       = {Labbé, Etienne and Pellegrini, Thomas and Pinquier, Julien},
+	year         = 2023,
+	month        = {May},
+	url          = {https://dcase.community/documents/challenge2023/technical_reports/DCASE2023_Labbe_59_t6a.pdf},
+	institution  = {DCASE2023 Challenge},
+	abstract     = {This technical report provides a concise overview of our systems submitted to the DCASE Challenge 2023 for tasks 6a, "Automated Audio Captioning" (AAC), and 6b, "Language-Based Audio Retrieval" (LBAR). In task 6a, we made four distinct submissions. The first submission employed a standard CNN14 encoder paired with a transformer decoder. In the second submission, we replaced this encoder with a ConvNeXt model to enhance audio representation. The third submission incorporated additional training data. We introduced a new task embedding approach to differentiate between different writing styles and audio types. Finally, in the fourth submission, we employed an ensemble method to combine five models trained on different seeds, aiming to improve the quality of the captions. For task 6b, we use the AAC models and we propose a novel approach to accomplish the LBAR task by leveraging the AAC system loss function without requiring any additional training. Our most successful AAC and LBAR systems achieved a SPIDEr-FL score of 0.320 and an mAP@10 score of 0.269. These results demonstrate relative improvements of 22.6\\% and 21.2\\% compared to the AAC and LBAR baselines, respectively.}
 }
