@@ -4,5 +4,7 @@ github_users:
 github_repos:
   - Labbeti/aac-datasets
   - Labbeti/aac-metrics
-  - Labbeti/SSLH
+  - Labbeti/dcase2024-task6-baseline
+  - Labbeti/torchoutil
   - Labbeti/conette-audio-captioning
+  - Labbeti/SSLH
