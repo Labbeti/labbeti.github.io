@@ -63,16 +63,18 @@
 	url          = {https://dcase.community/documents/workshop2023/proceedings/DCASE2023Workshop_Labb%C3%A9_43.pdf},
 	abstract     = {Automated Audio Captioning (AAC) aims to develop systems capable of describing an audio recording using a textual sentence. In contrast, Audio-Text Retrieval (ATR) systems seek to find the best matching audio recording(s) for a given textual query (Text-to-Audio) or vice versa (Audio-to-Text). These tasks require different types of systems: AAC employs a sequence-to-sequence model, while ATR utilizes a ranking model that compares audio and text representations within a shared projection subspace. However, this work investigates the relationship between AAC and ATR by exploring the ATR capabilities of an unmodified AAC system, without fine-tuning for the new task. Our AAC system consists of an audio encoder (ConvNeXt-Tiny) trained on AudioSet for audio tagging, and a transformer decoder responsible for generating sentences. For AAC, it achieves a high SPIDEr-FL score of 0.298 on Clotho and 0.472 on AudioCaps on average. For ATR, we propose using the standard Cross-Entropy loss values obtained for any audio/caption pair. Experimental results on the Clotho and AudioCaps datasets demonstrate decent recall values using this simple approach. For instance, we obtained a Text-to-Audio R@1 value of 0.382 for AudioCaps, which is above the current state-of-the-art method without external data. Interestingly, we observe that normalizing the loss values was necessary for Audio-to-Text retrieval.}
 }
-% Conette (arxiv version)
-@misc{labbe2023conette,
-	title        = {{CoNeTTE: An efficient Audio Captioning system leveraging multiple datasets with Task Embedding}},
-	author       = {Etienne Labbé and Thomas Pellegrini and Julien Pinquier},
-	year         = 2023,
-	journal      = {arXiv preprint arXiv:2309.00454},
-	url          = {https://arxiv.org/pdf/2309.00454.pdf},
-	eprint       = {2309.00454},
-	archiveprefix = {arXiv},
-	primaryclass = {cs.SD}
+% Conette (TASLP version)
+@article{labbe2023conette,
+	title        = {CoNeTTE: An Efficient Audio Captioning System Leveraging Multiple Datasets With Task Embedding},
+	author       = {Labbé, Étienne and Pellegrini, Thomas and Pinquier, Julien},
+	year         = 2024,
+	journal      = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+	volume       = 32,
+	number       = {},
+	pages        = {3785--3794},
+	doi          = {10.1109/TASLP.2024.3430813},
+	url          = {https://ieeexplore.ieee.org/document/10603439},
+	keywords     = {Decoding;Task analysis;Transformers;Training;Convolutional neural networks;Speech processing;Tagging;Audio-language task;automated audio captioning;dataset biases;task embedding;deep learning}
 }
 % Multilingual AAC (arxiv version)
 @article{cousin2023multilingual,
