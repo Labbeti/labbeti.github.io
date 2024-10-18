@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: Here is the list of my publications done during my PhD thesis.
-years: [2023, 2022]
+years: [2024, 2023, 2022, 2021]
 nav: true
 nav_order: 1
 ---
